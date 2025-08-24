@@ -1,0 +1,693 @@
+@font-face {
+  font-family: myfont;
+  src: url(/font/b_bagian/bBagian.ttf) format('woff2');
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+/* header */
+
+#header {
+  position: relative;
+  background-image: url('../image/Rectangle3.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+
+}
+
+.navbar {
+  max-height: 104px;
+}
+
+.navbar .link:hover {
+  color: rgba(255, 165, 9, 1) !important;
+}
+
+.navbar .nav-link {
+  color: white !important;
+  /* font-family: bolds; */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.86px;
+  text-align: left;
+}
+
+.contact-btn {
+  font-family: bolds;
+  border: none;
+  background-color: #006FF9;
+  outline: none;
+  width: 159px !important;
+  color: white;
+  min-height: 29px;
+  /* max-height: 44px; */
+  border-radius: 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-btn:hover {
+  background-color: #FFA509;
+}
+
+/* .contact-btn button {
+  min-height: 42px;
+} */
+.contact-btn::after {
+  content: url(../image/Group\ 1.svg);
+  position: relative;
+  top: 2px;
+  left: 20px;
+}
+
+#contact .nav-items .nav-link:hover {
+  color: rgba(255, 165, 9, 1) !important;
+
+}
+
+.submit-btn:hover {
+  background-color: #FFA509;
+}
+
+.submit-btn {
+  border: none !important;
+}
+
+.submit-btn::after {
+  content: url(../image/Group\ 1.svg);
+  position: relative;
+  top: 2px;
+  left: 20px;
+}
+
+.main-banner {
+  position: relative;
+  top: 40%;
+  font-size: rem;
+}
+
+.main-banner p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.main-banner h3 {
+  font-size: 48px;
+  font-weight: 700;
+  /* line-height: 65.57px; */
+}
+
+.explore {
+  font-family: 'myfont';
+  font-size: 6rem;
+}
+
+.scrach-img {
+  position: relative;
+  bottom: 6px;
+  width: 100%;
+}
+
+.about {
+  padding-top: 5px !important;
+}
+
+.about h3 {
+  font-family: 'myfont';
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 43.59px;
+  letter-spacing: 5px;
+  color: #1B1B1B;
+  /* margin-bottom: 0px; */
+}
+
+.about h5 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 25px 0;
+  color: #393939;
+}
+
+.about p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  line-height: 26px;
+  color: #393939;
+  margin-bottom: 0px;
+
+}
+
+.about-content {
+  max-width: 585px;
+}
+
+.about-banner {
+  position: relative;
+  bottom: 75px;
+}
+
+.about-banner img {
+  width: 100%;
+}
+
+.sticky {
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.main {
+  background-image: url(./image/CONTOUR\ LINES.svg);
+  background-position: -3% 39%;
+  background-repeat: no-repeat;
+  background-size: 35%;
+}
+
+.trips {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 100px;
+  padding-bottom: 120px;
+  padding-top: 50px;
+
+
+}
+
+.all-trip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 103px;
+  min-height: 112px;
+  border-radius: 5px;
+
+}
+
+.all-trip:hover {
+  border: 1px solid #FFA509;
+  color: #FFA509;
+
+}
+
+.all-trip p {
+  font-size: 14px;
+  line-height: 19.12px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.trips #vehicle-safari {
+  width: 116px;
+
+}
+
+.trips div {
+  width: 103px;
+  min-height: 112px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.trips div p {
+  font-size: 14px;
+  line-height: 19.12px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.trips div:hover {
+  border: 1px solid #FFA509;
+
+}
+
+.card {
+  overflow: hidden;
+
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+}
+
+.card-img-top {
+  transition: transform 0.5s ease;
+}
+
+
+.trips div:hover p {
+  color: #FFA509;
+}
+
+#expeditions h3 {
+  font-family: 'myfont';
+  font-size: 3rem;
+}
+
+#expeditions {
+  padding-top: 80px;
+}
+
+.trip-button {
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.trip-button.active {
+  border-color: #FFA509;
+}
+
+.trips div img {
+  max-width: 60px;
+  min-height: 60px;
+}
+
+.card-banner {
+  width: 100%;
+}
+
+.card-body {
+  padding: 15px 0 !important;
+}
+
+.card-btn {
+  padding: 3px 20px;
+  background-color: rgba(236, 156, 18, 0.5);
+  font-family: medium-font;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.86px;
+  letter-spacing: 0.055em;
+  border-radius: 3px;
+}
+
+.trip-details span {
+  font-weight: bolder;
+}
+
+.cards p {
+  margin-bottom: 2rem;
+}
+
+.card-title {
+  font-family: medium-font;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27.32px;
+  letter-spacing: 0.055em;
+  text-align: left;
+}
+
+.card-text {
+  font-family: medium-font;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.86px;
+  letter-spacing: 0.055em;
+  color: rgba(57, 57, 57, 1);
+}
+
+.expeditions-header .col-2 {
+  width: auto;
+  min-width: 103px;
+  min-height: 112px;
+}
+
+.expeditions-header p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+/* gallery */
+.gallery {
+  background-color: black;
+  padding: 90px 0 0px 0;
+}
+
+.gallery .row img {
+  width: 100%;
+  height: 100%;
+}
+
+.img-over {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.col-md-7 {
+  flex-direction: column;
+  display: flex;
+  row-gap: 30px;
+}
+
+.gallery h3 {
+  font-family: 'myfont';
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 39.23px;
+  letter-spacing: 0.02em;
+}
+
+.gallery p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-bottom: 52px;
+}
+
+/* .ocean {
+  /* padding-bottom: 3rem; */
+.gallery .row div {
+  overflow: hidden;
+}
+
+.gallery .row img:hover {
+  transform: scale(1.1);
+}
+
+.gallery .row img {
+  transition: transform 0.5s ease;
+}
+
+/* faq */
+.faq-section {
+  height: 90vh;
+}
+
+.head-section h3 {
+  font-family: 'myfont';
+  font-size: 2.5rem;
+}
+
+.accordion-item {
+  border-left: none !important;
+  border-right: none;
+  font-size: 20px;
+
+}
+
+.accordion-header button {
+  font-size: 30px !important;
+  padding: 20px;
+  font-weight: lighter;
+
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+  background: none;
+  box-shadow: none;
+  color: black;
+
+
+}
+
+@media (max-width:768px) {
+  .main-banner {
+    top: 10%;
+  }
+
+  .navbar-nav {
+    background-color: black;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    /* width: 100% ; */
+    /* max-width:768px; */
+  }
+
+  .about-banner {
+    position: relative;
+    bottom: 15px;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  .trips {
+    overflow-y: scroll;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    column-gap: 50px;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+  }
+
+  .pad-btn {
+    padding: 20px !important;
+  }
+
+  .gallery {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .gallery .row img {
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    padding: 8px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .col-md-7 {
+    row-gap: 0px;
+  }
+
+  .accordion-header button {
+    font-size: 20px !important;
+  }
+
+  .accordion-body p {
+    font-size: 15px;
+  }
+}
+
+.bg-section {
+  background: url('../Rectangle20.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container2 {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.leftt {
+  flex: 1;
+}
+
+.leftt img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.right {
+  flex: 1.5;
+  padding: 40px;
+  color: white;
+  overflow-y: auto;
+}
+
+.right h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Segoe UI", sans-serif;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+}
+
+textarea {
+  grid-column: span 2;
+  height: 120px;
+  resize: none;
+}
+
+.btn {
+  grid-column: span 2;
+  background: blue;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s ease;
+  width: 200px;
+  justify-self: center;
+  /* centers the button */
+}
+
+.btn:hover {
+  background: yellow;
+}
+
+@media (max-width: 992px) {
+  .container2 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .leftt img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  textarea {
+    grid-column: span 1;
+  }
+
+  .btn {
+    grid-column: span 1;
+  }
+}
+
+
+
+
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 40px 20px 20px;
+  position: relative;
+}
+
+footer img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+footer h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-links {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: goldenrod;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 18px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: goldenrod;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 20px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: goldenrod;
+}
+
+@font-face {
+  font-family: myfont;
+  src: url(/font/b_bagian/bBagian.ttf) format('woff2');
+}
